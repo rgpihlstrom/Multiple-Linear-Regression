@@ -1,10 +1,10 @@
-# Phase2Project
+# Phase 2 Project
 
 ![Film_Crew](/images/KingCountyRealty.png)
 
-# Analysis of How to Make Microsoft a Successful Film Studio 
+# King County Realty - Making an Instant Home Quote Algorithm
 
-**Authors**: [Fennec C. Nightingale,](mailto:fenneccharles@gmail.com)[Matthew Lipman](mailto:matthew.lipman@wework.com) & [Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
+**Authors**:[Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
 
 ## Overview
 
@@ -13,8 +13,7 @@ This project analyzes the best route for Microsoft to break into the film indust
 
 ## Business Problem
 
-Messing up your introductory film could not only cost you millions, but your reputation. Microsoft will get many of the tools necessary to produce a successful film from our analysis & using them will give Microsoft an edge into the film scene. 
-
+The king County Realty company is looking to increase the number of new customers it helps in selling their homes on a monthly basis.  The Cheif Marketing Officer believes it has an opportunity to build consumers awareness with potential buyers and sellers.  Its awareness buidling strategy has mutiple tactics but all messaging drives consumers either to the corporate customer service line or the company website.  The corporate website is robust but the Marketing Team believes it needs a web-based tool that can auto-generated a homes sale price simply by allowing a user to entered an address or parcel number.  After recieving a quote from the newly develeped tool the system will invite the user to enter their contact information to receive a more refined quote based on any additional provided information.  Ultimately this will result in additional cutomer touchpoints and additional opportunities to establish new customers.
 ## Data
 <ol>
     <li>Box Office Mojo: Reporting & analysis service that tracks box office receipts. Data includes         daily, weekly, weekend, monthly, yearly, seasonal, and holiday box-office grosses & is linked         by movie title and year of release. </li>
