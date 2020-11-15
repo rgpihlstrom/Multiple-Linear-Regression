@@ -1,6 +1,6 @@
 # Phase2Project
 
-![Film_Crew](/images/Film_Set.png)
+![Film_Crew](/images/KingCountyRealty.png)
 
 # Analysis of How to Make Microsoft a Successful Film Studio 
 
