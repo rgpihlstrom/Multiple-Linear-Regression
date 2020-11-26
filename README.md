@@ -2,7 +2,7 @@
 
 ![Film_Crew](/images/KingCountyRealty.png)
 
-# King County Realty - Making an Instant Home Quote Algorithm
+# King County Realty - Increasing Revenue From Seller Commisions
 
 **Authors**:[Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
 
