@@ -35,7 +35,7 @@ Pressures are mounting as home prices along with the number of building permits 
 
 
 ## Data
-1.	Houses sold between May 2014 – May 2015 in King County in the state of Washington, along with the homes basic attributes: This was the data provided as the begin of the analysis
+1.	Houses sold between May 2014 – May 2015 in King County in the state of Washington, along with the homes basic attributes: This was the intial data provided to begin the project
 
 2.	Home Tax data collected by King County Tax Assessor’s Office:  This data contains several years of past apprasal information used to justify taxes levied per house.  Includings additional physical attributes as well as school district
 
@@ -54,10 +54,14 @@ Pressures are mounting as home prices along with the number of building permits 
 ## Methods
 
 
-This project uses the Crisp DM methodology to generate a Multiple Linear Regression model to predict the sales prices for each of the homes sold within the captured timeframe.  The model developed provides the opportunity to use home features (physical and or location based) as well as other assessor past appraisals to make predictions on the price achieved during the sale of the home.  The features that had the heaviest weights (coefficients) include : Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage. 
 
-The methodology for model development was very interactive.  It started with understanding the basic drivers of the real estate industry, what features are most attractive to buyers and sellers along with the methods used by agents to set home prices.  Early on in the iterative process it was obvious the model was missing key elements to determine that attractiveness of the location of each home.  I rectified this gap by scraping several sources of data.  Unfortunately, only a handful of these sources were present in the final model and the VIF and correlation of these factors resulted in them being excluded.  The assumptions around linearity, multicollinearity, homoscedastic, and error normality were adhered to as required in the assumption for using linear regression to make prediction.  The data was collected and primarily through downloading, scraping, cleaning & linking via provided or created keys.
+This project uses the Crisp DM methodology to generate a Multiple Linear Regression model optimized to predict the sales prices for each of the homes sold within the aforementioned timeframe.  The model developed provides the opportunity to use a homes features (physical and or location based) as well as other information collected by the assessors office including the home appraisal tax data.  The top 6 features (attributes) that had the heaviest weights (coefficients) in predicting a homes price includes : Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage. 
 
+The methodology for model development was very interactive.  I began by doing secondary research around the basic drivers of the real estate industry, more specifically is researched what features are most attractive to buyers and sellers along with the methods used by real estate agents to set home prices.  Early on in the iterative research/ modeling process it was obvious the model was missing key elements to determine the attractiveness of the location of each home.  I rectified this gap by scraping several location riches sources of data.  Unfortunately, only a handful of these sources were present in the final model as the VIF and correlation tests resulted in many of them being excluded.  
+
+The assumption requirements associated with using multiple linerar regression to make predictions were followed during model development.  The assumptions include: linearity, multicollinearity, homoscedastic, and error normality.
+
+In terms of data collection I primarily scraping, downloading, cleaning & linking via provided or created keys.
 
 
 ## Results
