@@ -8,14 +8,17 @@
 
 ## Overview
 
-This project is focused on leveraging Multiple Linear Regression to make predictions on the prices of homes.  It features data captured between 2014 - 2015 of the actual sales prices of homes sold in King County Seattle between this timeframe.  The goal of the project is to accurately predict the price each home sold for using the attributes(features) associated with each home.  The generated model was able to achieve a “Predictive Power” of 82% prices (R^2 = .82).  The following 6 features had the greatest weights within the model: Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage. 
+This project is focused on leveraging Multiple Linear Regression to make predictions on the prices of homes.  It features data captured between 2014 - 2015 of the actual sales prices of homes sold in King County Seattle between this timeframe.  It also features ancillary supporting data scraped from several sources include the King County Assessor’s office along with King County School District data.
+
+The goal of the project is to accurately predict the price in which each home sold using the attributes(features) associated with each home.  The generated model was able to achieve a “Predictive Power” of 82% prices (R^2 = .82).  The following 6 features had the greatest weights within the model: Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage.
 
 The Model will be used by Real Estate agents in two capacities: 
 
-    1: Making home improvement recommendations to potential home sellers
-    2: Setting "Better" or more informed prices.  
+1: Making recommendations to potential home sellers on the features they should focus on improving prior to sale
+2:  Setting "better" or more informed prices.  
 
-Ultimately, this model will help King County Reality increase revenue from seller commissions as more informed agents will facilitate higher home prices and high home prices will translate into higher commissions.  The model can be used as both a tool by itself to ensure sellers achieve true Market Value upon selling their home and or as a training tool to improve agent acumen.  This will give King County Reality the tools it needs to be more successful as it faces predicted trends in higher home prices along with higher levels of new construction.
+Ultimately, this model will help the King County Reality Co. increase revenue from seller commissions as more informed agents and smarter prices will facilitate higher home sales prices and higher home sales prices will translate into higher seller commissions.  The model can be used as both a tool by itself to ensure sellers achieve true Market Value as well as a educational tool to improve agent acumen.  This will give King County Reality the tools it needs to be more successful as it faces predicted trends in higher home prices along with higher levels of new construction.
+
 
 
 
