@@ -66,42 +66,55 @@ In terms of data collection I primarily scraping, downloading, cleaning & linkin
 
 ## Results
 
-The most profitable genres are Adventure, Sci-Fi, and Animation.
+The final model generated a predictive power (Adj R^2) of .82
 
 ![Movie_Genres](/images/Movie_Genre.png)
 
 
-The most profitable Action and Adventure movies contain between three and seven  “A Players,” thus demonstrating the strong correlation between “A Player” presence, and profitability. Many of the most profitable films in the other genres have no more than two “A Players” and therefore, do not require these figures to make a profitable film.
+The features that had the most influence/ wieghts include: 1.2 x Previous Year Appraisals Values : School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage.
 
 
 ![A_Players](/images/A_Players.png)
 
-Regardless of whether or not the popularity was a dislike or a like by either critics or audience, the greater the popularity, the greater the return on investment. Films that had fewer interactions had a lower return on investment.
+Based on the model usings hypothetical changes in the average home features in the model resulted in the following
 
 ![A_Players](/images/Critics_ROI.png)
 ![A_Players](/images/Critics_Popularity.png)
 
+## Extra Credit
+
+Given the greater than 200% greater weight of Assesor Apprasail Value feature had above the next most impactful feature, above square footable, I thought iit would be interesting to see how well our model would predict Assesor Apprasail Values, more specifically I changed the target value of the original model from a homes sales price I used it to predict the Assesor Apprasail Value.  Interesting our model predicted/ explained the Assesor Apprasail Value with greater strenght than our second model generated, which did not include the Assesor Apprasail Value as a feature.   The Assesor Apprasail Value features was not added until my third and forth models.  See below.
+
+
+![A_Players](/images/Critics_ROI.png)
+
+
+What this suggestes is the factors that the assesors use to create their appraisal is very simliar to those that were provided in our inital dataset.  The fact that our model explained more variablilyt in the data of the Assesors Apprasal value suggests that assesor use more tanggible features when creating appraisals and then final price buyers pay for a home has factors that are not as tangabli in nature, ie. subject preference
+
+
+
 ## Conclusions
 
-This analysis leads to three recommendations for maximizing your next movie’s profitability:
+This analysis leads to three recommendations helping King County Reality acheive higher seller commisions:
 
-- **Make a movie with elements of adventure, sci-fi, and animation.**  The most profitable film genres in the past 15 years are the above recommended genres. While some other films might have greater return on investment, the overall profits are highest with these three.
-- **If pursuing an Adventure film, ensure your movie has at least three “A Players.”** The Bankability Index® shows that by including at least three high-profile actors, directors, producers, or screenwriters, your film is guaranteed to make a certain baseline revenue.
-- **eFilmCritic.com, TimeOut, The Washington Post, The New York Times, and Entertainment Weekly are our five recommended film critic publications.**  Sending your film to them pre-release will benefit your movie’s profitability because they 1) post the largest number of reviews 2) are popular enough to be read by a wide audience 3) have a high positivity rate, making it more probable to receive a positive review.
+- **Physical "Controllable Features**  As real estate agents look to coach prospective sellers on features to improve to maximize sales price they should focus on Square Foot Main Level, as well as increasing Grade related features such as custom cabinets, and other various customozizations that make home less basic and more custom
+- **Location "Influencable" Features”** WHile the above "controllable" features allow sellers to make short-term efforts and realize instant benefits, location based features such as the ranking of the school district in which a home resides or the number of attractions within close proximity to a home is very difficult to impact in a direct manner.  However, over the course of several years a home owner can look to invest in efforts and finances to improve school performance and or influence political decisions related to politicians who believe in bringing more attractions to the area in which a home resides.
+
+- **Setting "bBtter" More Informed Prices**  Based on the 200% delta between the Assesor Apraisal feature and the next biggest feature suggests that this feature could be very intrumental in augmenting the current processes real estate agents use in setting prices.  This could be especially true in situation where CMA data is either not available or not as applicable as desired.
 
 ### Next Steps
 
-Further analyses could yield additional insights to substantiate future profit in the film industry.
+Further analyses could yield additional insights to help King County Reality Increase Revenue From Sales Commisions
 
-- **Rightsize your budget and maximize return.** If you are working on a tighter budget, we can tailor your genre inquiry to identify the highest return on investment with your specific budget.
-- **Model need for franchising.** We are able to further model the Bankability Index to parlay your next box office-busting movie into the next hit-franchise.
-- **Predicting your next awards.** Given your genre choice, we can model critic success by genre and forecast your chances of winning film awards.
+- **Augment the Current Model** Look to add prediction accuracy by studying the homes that showed the largest difference between the predicted and the actual values of a the sold home.  Additionally looking to features requiring interactivity could be explored as many factors that would seem to be impactful were elimnated due to VIF.
+- **Creating Additional Models**  The model created was optimized for the most frequent "Common/ Main stream" home prices, quantity of square footage, number of bathroom/ rooms, lot size and several other realated features were honed to predict homes that would be foound in the middle of the bell curve for normalized data.  Additional models could be created focused on homes <$200k, >$900k, Waterfront, large Lot Size, etc 
+- **Deployment** Once we have optimized our models and or generated enough model to account for the wide variety of home features that are present in the King County district look to automate and deploy via a web based interface and made available to the larger public for impromptu consumption
 
 ## For More Information
 
 See the full analysis in the [Jupyter Notebooks](folder) or review our <a href="https://github.com/mattielips/movie-data-analysis/blob/master/Presentation.pdf">Presentation</a>.
 
-For additional info, contact us here: [ Fennec C. Nightingale,](mailto:fenneccharles@gmail.com)[ Matthew Lipman,](mailto:matthew.lipman@wework.com) & [ Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
+For additional info, contact me here: [ Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
 
 
 ## Repository Structure
