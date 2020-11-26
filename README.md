@@ -53,8 +53,11 @@ Pressures are mounting as home prices along with the number of building permits 
 
 ## Methods
 
- This project uses descriptive analysis, with description of trends over time. This provides the opportunity to analyze the movie industry in a manner that shows relationships between factors including: Sales, Profitability, Costs, Genre, People, Studio, Critics, and more. Our data was collected and summarized primarily through downloading, scraping, cleaning & linking via provided or
-created keys.
+
+This project uses the Crisp DM methodology to generate a Multiple Linear Regression model to predict the sales prices for each of the homes sold within the captured timeframe.  The model developed provides the opportunity to use home features (physical and or location based) as well as other assessor past appraisals to make predictions on the price achieved during the sale of the home.  The features that had the heaviest weights (coefficients) include : Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage. 
+
+The methodology for model development was very interactive.  It started with understanding the basic drivers of the real estate industry, what features are most attractive to buyers and sellers along with the methods used by agents to set home prices.  Early on in the iterative process it was obvious the model was missing key elements to determine that attractiveness of the location of each home.  I rectified this gap by scraping several sources of data.  Unfortunately, only a handful of these sources were present in the final model and the VIF and correlation of these factors resulted in them being excluded.  The assumptions around linearity, multicollinearity, homoscedastic, and error normality were adhered to as required in the assumption for using linear regression to make prediction.  The data was collected and primarily through downloading, scraping, cleaning & linking via provided or created keys.
+
 
 
 ## Results
