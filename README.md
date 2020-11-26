@@ -15,6 +15,7 @@ The goal of the project is to accurately predict the price in which each home so
 The Model will be used by Real Estate agents in two capacities: 
 
 1: Making recommendations to potential home sellers on the features they should focus on improving prior to sale
+
 2:  Setting "better" or more informed prices.  
 
 Ultimately, this model will help the King County Reality Co. increase revenue from seller commissions as more informed agents and smarter prices will facilitate higher home sales prices and higher home sales prices will translate into higher seller commissions.  The model can be used as both a tool by itself to ensure sellers achieve true Market Value as well as a educational tool to improve agent acumen.  This will give King County Reality the tools it needs to be more successful as it faces predicted trends in higher home prices along with higher levels of new construction.
@@ -24,7 +25,15 @@ Ultimately, this model will help the King County Reality Co. increase revenue fr
 
 ## Business Problem
 
-The king County Realty company is looking to increase the number of new customers it helps in selling their homes on a monthly basis.  The Cheif Marketing Officer believes it has an opportunity to build consumers awareness with potential buyers and sellers.  Its awareness buidling strategy has mutiple tactics but all messaging drives consumers either to the corporate customer service line or the company website.  The corporate website is robust but the Marketing Team believes it needs a web-based tool that can auto-generated a homes sale price simply by allowing a user to entered an address or parcel number.  After recieving a quote from the newly develeped tool the system will invite the user to enter their contact information to receive a more refined quote based on any additional provided information.  Ultimately this will result in additional cutomer touchpoints and additional opportunities to establish new customers.
+The king County Realty company is looking to increase its revenue from seller commissions.  Housing market experts predict a spike in the prices of homes along with increases in housing inventory due to new construction.  The CEO wants to ensure the firm is prepared to appropriately meet the challenges of this new housing market and believes his firm needs to be more data driven in its approach to helping customers buy and sell homes.  The CEO has hired me to help leverage its current data sources along with finding additional data sources required to help agents in two primary areas
+
+1.	 Better understand and predict the relationship between home improvement projects and their impact on final sales price.  
+2.	Understand if there are other data sources that agents can use to help set smarter prices.
+
+Historically prices are set using several sources of data that is presented to agents in the form of a Comparative Market Analysis (CMA) report.  
+Pressures are mounting as home prices along with the number of building permits issued is expected to rise over the next five years.  Customer expectations are increasing as is the pressures to stay competitive.
+
+
 ## Data
 <ol>
     <li>Box Office Mojo: Reporting & analysis service that tracks box office receipts. Data includes         daily, weekly, weekend, monthly, yearly, seasonal, and holiday box-office grosses & is linked         by movie title and year of release. </li>
