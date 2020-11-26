@@ -35,6 +35,13 @@ Pressures are mounting as home prices along with the number of building permits 
 
 
 ## Data
+1.	Houses sold between May 2014 – May 2015 in King County in the state of Washington, along with the homes basic attributes: This was the data provided as the begin of the analysis
+
+2.	Home Tax data collected by King County Tax Assessor’s Office:  This data contains several years of past apprasal information used to justify taxes levied per house.  Includings additional physical attributes as well as school district
+
+3.	King County School District Ranks:  This data is used to get the ranking of the school district associated with each of the homes in the initial dataset discussed above
+
+
 <ol>
     <li>Box Office Mojo: Reporting & analysis service that tracks box office receipts. Data includes         daily, weekly, weekend, monthly, yearly, seasonal, and holiday box-office grosses & is linked         by movie title and year of release. </li>
     <li>IMDB : Database with information related to films, including cast, crew, fan and critical             reviews & ratings.  Data is linked through unique movie keys (tconst) & person keys (nconst).     </li>
