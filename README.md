@@ -54,25 +54,21 @@ As prescribed by the Crisp DM methodology, model development was very iterative.
 ## Results
 
 The final model generated a predictive power (Adj R^2) of .82
+<img src="/images/Model_Final_Results.png" width="800" height="601">
 
-![Model Preditive Power](/images/Model_Final_Results.png)
+**The features that had the most influence/ weights include:** 
 
+    - 1.2 x (Previous Year Appraisals Values)
 
-**<ul>The features that had the most influence/ weights include:</ul>** 
+    - .34 x (Above Square Footage)
 
-1.2 x (Previous Year Appraisals Values)
+    - .22 x (School District Rank)
 
-.34 x (Above Square Footage)
+     - .15 x (Number of Fortune 500 Companies)
 
-.22 x (School District Rank)
+     - Other x (See Power Point Presentation or Jupyter Notebook “Models” for details)
 
-.15 x (Number of Fortune 500 Companies)
-
-Other - several other features were used in making predictions.  See Power Point Presentation or Jupyter Notebook “Models” for details
-
-
-Based on the model,  using hypothetical changes in the average home features, the model predicted the following results:
-
+**Example of Specific Changes Can Have On Predicted Price:** 
 <img src="/images/ChangesInAveargeHome.png" width="800" height="601">
 
 
