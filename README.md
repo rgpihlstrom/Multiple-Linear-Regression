@@ -69,6 +69,8 @@ The final model generated a predictive power (Adj R^2) of .82
      - Other x (See Power Point Presentation or Jupyter Notebook “Models” for details)
 
 
+
+  
 **Example of Impact on Sales Price By Making Specific Improvements:** 
 <img src="/images/ChangesInAveargeHome.png" width="600" height="601">
 
