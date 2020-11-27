@@ -68,11 +68,12 @@ The final model generated a predictive power (Adj R^2) of .82
 
      - Other x (See Power Point Presentation or Jupyter Notebook “Models” for details)
 
-**Example of Specific Changes Can Have On Predicted Price:** 
+
+**Example of Impact on Sales Price By Making Specific Improvements:** 
 <img src="/images/ChangesInAveargeHome.png" width="600" height="601">
 
 
-Greatest Insight:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage”.  The reason this was so insight was the lack of reference to this variable in all my research in regards to determining a home’s sales price.  Research suggested the agents use CMA (Comps) to set pricings and while I did not have a feature related to CMA I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power, no where in my research did I see anyone recommend using “Assessor Appraisal Value” as a potential feature.  Given it was the heaviest feature in my model I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features 
+**Greatest Insight**:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage”.  The reason this was so insight was the lack of reference to this variable in all my research in regards to determining a home’s sales price.  Research suggested the agents use CMA (Comps) to set pricings and while I did not have a feature related to CMA I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power, no where in my research did I see anyone recommend using “Assessor Appraisal Value” as a potential feature.  Given it was the heaviest feature in my model I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features 
 “Location, Location, Location” as well as “Above Square Footage” are most helpful in predicting a homes price not “Assessor Appraisal Value
 ## Extra Credit
 Given the greater than 200% greater weight of “Assessor Appraisal Value” feature had above the next most impactful feature, “Above Square Footage”, I thought it would be interesting to see how well our model would predict Assessor “Appraisal Values”, more specifically, I changed the target value of the original model from a homes sales price to  “Assessor Appraisal Value”.  Interesting our model predicted/ explained the Assessor Appraisal Value with greater strength than our second model was able to explain the actual sales price reached, which did not include the “Assessor Appraisal Value” as a feature.   The “Assessor Appraisal Value” features was not added until later models.  See below
