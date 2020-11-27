@@ -73,9 +73,7 @@ Other - several other features were used in making predictions.  See Power Point
 
 Based on the model,  using hypothetical changes in the average home features, the model predicted the following results:
 
-![Hypothetical Impact of Changing Features to Value Changes](/images/ChangesInAveargeHome.png)
-
-<img src="/images/ChangesInAveargeHome.png" width="1000" height="600">
+<img src="/images/ChangesInAveargeHome.png" width="800" height="600">
 
 
 Greatest Insight:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage”.  The reason this was so insight was the lack of reference to this variable in all my research in regards to determining a home’s sales price.  Research suggested the agents use CMA (Comps) to set pricings and while I did not have a feature related to CMA I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power, no where in my research did I see anyone recommend using “Assessor Appraisal Value” as a potential feature.  Given it was the heaviest feature in my model I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features 
@@ -91,7 +89,7 @@ What this suggests is the factors that the assessors use to create their apprais
 
 
 
-## Conclusions
+## Conclusions/ Reccomendations
 
 This analysis leads to three recommendations helping King County Reality achieve higher seller commissions:
 
@@ -99,7 +97,7 @@ This analysis leads to three recommendations helping King County Reality achieve
 - **Location "Influenceable" Features”** While the above "controllable" features allow sellers to make short-term efforts and realize instant benefits, location based features such as the ranking of the school district in which a home resides or the number of attractions within close proximity to a home is very difficult to impact in a direct manner.  However, over the course of several years a home owner can look to invest in efforts and finances to improve school performance and or influence political decisions related to politicians who believe in bringing more attractions to the area in which a home resides.
 - **Setting "Better" More Informed Prices**  Based on the 200% delta between the “Assessor Appraisal Value” feature and the next biggest feature suggests that this feature could be very instrumental in augmenting the current processes real estate agents use in setting prices.  This could be especially true in situation where CMA data is neither not available, nor as applicable as desired.
 
-### Next Steps
+## Next Steps
 
 Further analyses could yield additional insights to help King County Reality Increase Revenue from Sales Commissions
 - **Augment the Current Model** Look to add prediction accuracy by studying the homes that showed the largest difference between the predicted and the actual prices of homes sold.  Additionally, looking to add features requiring interactivity could be explored as many factors that would seem to be impactful were eliminated due to VIF.
