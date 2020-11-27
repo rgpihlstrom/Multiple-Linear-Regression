@@ -24,7 +24,7 @@ Ultimately, the model can be used as both a tool by itself to ensure sellers ach
 
 ## Business Problem
 
-The king County Realty company is looking to increase its revenue from seller commissions.  Housing market experts predict a spike in the prices of homes along with increases in housing inventory due to new construction.  The CEO wants to ensure the firm is prepared to appropriately meet the challenges of this new housing market and believes his firm needs to be more data driven in its approach to helping customers buy and sell homes.  The CEO has hired me to help leverage its current data sources along with finding new data sources to help agents in two primary areas
+The King County Realty company is looking to increase its revenue from seller commissions.  Housing market experts are predicting a sharp increase in the prices of homes along with increases in housing inventory due to new construction.  The CEO wants to ensure the firm is prepared to appropriately meet the challenges of this new housing market and believes his firm needs to be more data driven in its approach to helping customers buy and sell homes.  The CEO has hired me to help leverage its current data sources along with finding new data sources to help agents in two primary areas
 
 1.	 Better understand and predict the relationship between home improvement projects/ features and their impact on final sales price.  
 2.	Understand if there are other data sources that agents can use to help set smarter prices.
