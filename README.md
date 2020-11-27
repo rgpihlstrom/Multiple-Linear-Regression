@@ -67,9 +67,9 @@ The final model generated a predictive power (Adj R^2) of .82
 
     - .22 x (School District Rank)
 
-     - .15 x (Number of Fortune 500 Companies)
+    - .15 x (Number of Fortune 500 Companies)
 
-     - Other x (See Power Point Presentation or Jupyter Notebook “Models” for details)
+    - Other x (See Power Point Presentation or Jupyter Notebook “Models” for details)
 
 
 
@@ -78,10 +78,12 @@ The final model generated a predictive power (Adj R^2) of .82
 
 ![A_Players](/images/ChangesInAveargeHome.png)
 
-**Greatest Insight**:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage” was very surprising and insightful.  The reason this was so insightful was the lack of reference to this variable in all my research in regards to determining a homes sales price.  Research suggested that agents primarily use CMA (Comps) to set pricings and while I did not have a feature related to CMA in my model I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power.  That being said, I hypothesize that "Assessor Appraisal Value" would be the second most heavy feature in a model that contained both "Comp Prices" and "“Assessor Appraisal Value". Given this hypothesis I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features “Location, Location, Location” as well as “Above Square Footage” as the most helpful, “Assessor Appraisal Value" is currently being overlooked. One caveat to this recommendation would be if significant improvement had been made to a home since the last onsite visit of a tax assessor.  Per the King County website, assessors make onsite assessments once every 6 years, this would make older assessments less accurate if significant improvements have been made to a home since last visit.  The same can be said if significant declines in value had occurred since the last onsite appraisal visit.
+**Greatest Insight**:  The weight “Assessor Appraisal Value” had, relative to the second most heavy feature “Above Square Footage”, was very surprising and insightful.  The reason this was so insightful was the lack of reference to this variable in all my research in regards to determining a homes sales price.  Research suggested that agents primarily use CMA (Comps) to set pricings and while I did not have a feature related to CMA in my model, I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power.  That being said, I hypothesize that "Assessor Appraisal Value" would be the second most heavy feature in a model that contained both "Comp Prices" and "“Assessor Appraisal Value". Given this hypothesis I would recommend it be added as a potential attribute to all home predictive models.  Most research suggests the more common features “Location, Location, Location” as well as “Above Square Footage” as the most helpful. I believe “Assessor Appraisal Value" is currently being overlooked. 
+
+One caveat to this recommendation would be if significant improvements had been made to a home since the last onsite visit of a tax assessor.  Per the King County website, assessors make onsite assessments once every 6 years, this would make older assessments less accurate if significant improvements have been made to a home since the last visit.  The same can be said if significant declines in value had occurred since the last onsite appraisal visit.
 
 ## Extra Credit
-Given the greater than 200% difference in weight between the “Assessor Appraisal Value” feature had the next most impactful feature, “Above Square Footage”, I thought it would be interesting to see how well our model would predict "Assessor Appraisal Values”, more specifically, used the original model and changed the target value  predicted "Homes Sales Price to predicted “Assessor Appraisal Value”.  Interestingly my model predicted/ explained the "Assessor Appraisal Value" with greater strength than "Homes Sales Price".  Keep in mind my second model did not include the “Assessor Appraisal Value” as a feature. See below for a comparison of the same model predicting both "Home Price" and "Assessors Appraisal Value"
+Given the greater than 200% difference in weight between the “Assessor Appraisal Value” feature and the next most impactful feature, “Above Square Footage”, I thought it would be interesting to see how well our model would predict "Assessor Appraisal Values”, more specifically, I used the original model and changed the target value  predicted "Homes Sales Price to predicted “Assessor Appraisal Value”.  Interestingly my model predicted/ explained the "Assessor Appraisal Value" with greater strength than "Homes Sales Price".  Keep in mind my second model did not include the “Assessor Appraisal Value” as a feature. See below for a comparison of the same model predicting both "Home Price" and "Assessors Appraisal Value".
 
 
 
@@ -90,31 +92,30 @@ Given the greater than 200% difference in weight between the “Assessor Apprais
 ![NA](/images/Original_vs_Assesor_Value.png)
 
 
-**INSIGHT:** What this suggests is the factors that the assessors use to create appraisals are very similar to those that were provided in our initial dataset and using to build our early models.  The fact that our model explained more variability in "Assessors Appraisal Value" suggests that assessor use more tangible features when creating appraisals vs. intangible features.  This conclusion can be drawn given the heavy presence of tangible features in the dataset.  More specifically, Assessors rely more heavily on the tangible features (Above Sqr Ft, Lot Size, Grade, Etc.) when developing appraisals than buyers and seller use to achieve in reaching final prices.  Hypothesized intangibility features buyer and sellers use to reach final sales price are skewed toward and or incorporate buyer preference, which is entirely subjective.
-
+**INSIGHT:** What this suggests is the factors that the assessors use to create appraisals are very similar to those that were provided in our initial dataset and used to build our early models.  The fact that our model explained more variability in "Assessors Appraisal Value" suggests that assessors use more tangible features when creating appraisals vs. intangible features.  This conclusion can be drawn given the heavy presence of tangible features in the dataset.  More specifically, Assessors rely more heavily on the tangible features (Above Sqr Ft, Lot Size, Grade, Etc.) when developing appraisals than buyers and seller use to achieve reaching final prices.  My Hypothesis is buyers and sellers rely on intangibility features more heavily when determining an estimated value of a home.  The greater variance in our original model to predict home sales vs. assesor appraisal value suggests the usage of features that cannot be quantified such as subjective prefrences.   
 
 
 ## Conclusions/ Recommendations
-This analysis leads to three recommendations helping King County Reality achieve higher seller commissions:
+This analysis leads to three recommendations that would help King County Reality achieve higher seller commissions:
 
-**1. Physical "Controllable" Features:**  As real estate agents look to coach prospective sellers on features to improve to maximize sales price they should focus on “Above Square Footage”, as well as increasing “Grade” which is related to features such as custom cabinets, and other various customizations that make home less basic and more designer/ custom
+**1. Physical "Controllable" Features:**  As real estate agents look to coach prospective sellers on features to improve in order to maximize sales price they should focus on “Above Square Footage”, as well as increasing “Grade” which is related to features such as custom cabinets, and other various customizations that make homes less "basic" and more designer/ custom
 <br>
 <img src="/images/ControlableFeatures.png" width="500" height="300"></image>
 <br>  
-**2. Location "Influenceable" Features:** While the above "controllable" features allow sellers to make short-term efforts and realize instant benefits, location based features such as the ranking of the school district in which a home resides or the number of attractions within close proximity to a home is very difficult to impact in a direct manner.  However, over the course of several years a home owner can look to invest in efforts and finances to improve school performance and or influence political decisions related to politicians who believe in bringing more attractions to the area in which a home resides.
+**2. Location "Influenceable" Features:** While the above "controllable" features allow sellers to make short-term efforts and realize instant benefits, location based features, such as the ranking of the school district in which a home resides or the number of attractions within close proximity to a home, are very difficult to impact in a direct manner.  However, over the course of several years a home owner can look to invest in efforts and finances to improve school performance and or influence political decisions related to politicians who believe in bringing more attractions to the area in which a home resides.
 <br>
 <img src="/images/InfluencableFeatures.png" width="500" height="300"></image>
 <br>
-**3. Setting "Better" More Informed Prices:**  Based on the 200% delta between the “Assessor Appraisal Value” feature and the next biggest feature suggests that this feature could be very instrumental in augmenting the current processes real estate agents use in setting prices.  This could be especially true in situation where CMA data is neither not available, nor as applicable as desired.
+**3. Setting "Better" More Informed Prices:**  The 200% delta between the feature “Assessor Appraisal Value” and the next biggest feature "Above Square Footage" suggests that adding “Assessor Appraisal Value” to home price estimate models could be very instrumental in augmenting current processes real estate agents use in setting prices.  This could be especially true in situations where CMA data is either not available, nor as applicable as desired.
 <br>
 <img src="/images/taxAssesorValues.png" width="500" height="300"></image>
 
 ## Next Steps
 
-Further analyses could yield additional insights to help King County Reality Increase Revenue from Sales Commissions
+Further analyses could yield additional insights to help King County Reality increase revenue from sales commissions
 - **Augment the Current Model** Look to add prediction accuracy by studying the homes that showed the largest difference between the predicted and the actual prices of homes sold.  Additionally, looking to add features requiring interactivity could be explored as many factors that would seem to be impactful were eliminated due to VIF.
-- **Creating Additional Models**  The model created was optimized for the most frequent "Common/ Main stream" home prices, quantity of square footage, number of bathroom/ rooms, lot size and several other related features were used to predict homes that would be found in the middle of the bell curve of a normalized dataset (Homes between ~$300k - ~$900k, Bedrooms between 1-4, Lot Size 4,000 – 12,000, Other).  Additional models could be created focused on homes <$200k, >$900k, Waterfront, large Lot Size, etc 
-- **Deployment** Once we have optimized our models and or generated enough models to account for the wide variety of home present in the King County district I would look to automate and deploy the models via a web based interface and make it available to the larger public for impromptu consumption and a potential Marketing tool to generate web traffic and brand awareness
+- **Creating Additional Models**  The model created was optimized for the most frequent "Common/ Main stream" home prices, quantity of square footage, number of bathroom/ rooms, lot size and several other related features were used to create the model.  The model was optimized for homes that had prices between ~$300k - ~$900k, Bedrooms between 1-4, Lot Size 4,000 – 12,000, Other).  Additional models could be created focused on homes <$200k, >$900k, Waterfront, large Lot Size, etc. 
+- **Deployment** Once we have optimized our models and/or generated enough models to account for the wide variety of homes present in the King County district I would look to automate and deploy the models via a web based interface and make it available to the larger public for impromptu consumption and a potential Marketing tool to generate web traffic and brand awareness.
 
 ## For More Information
 
