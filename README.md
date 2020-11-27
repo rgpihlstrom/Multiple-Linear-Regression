@@ -58,11 +58,16 @@ The final model generated a predictive power (Adj R^2) of .82
 ![Model Preditive Power](/images/Model_Final_Results.png)
 
 
-**<ul>The features that had the most influence/ weights include</ul>**: 
-1.2 x Previous Year Appraisals Values
-.34 x Above Square Footage
-.22 x School District Rank
-.15 Number of Fortune 500 Companies
+**<ul>The features that had the most influence/ weights include:</ul>** 
+
+1.2 x (Previous Year Appraisals Values)
+
+.34 x (Above Square Footage)
+
+.22 x (School District Rank)
+
+.15 x (Number of Fortune 500 Companies)
+
 Other - several other features were used in making predictions.  See Power Point Presentation or Jupyter Notebook “Models” for details
 
 
