@@ -29,8 +29,9 @@ The King County Realty company is looking to increase its revenue from seller co
 1.	 Better understand and predict the relationship between home improvement projects/ features and there impact on final sales price 
 2.	Understand if there are other data sources that agents can use to help set smarter prices
 
-Historically prices are set using several sources of data that is presented to agents in the form of a Comparative Market Analysis (CMA) report.  The CEO is wondering if there are other sources of data to help triangulate the prices set for newly listed homes
-Pressures are mounting as home prices along with the number of building permits issued is expected to rise over the next five years.  Customer expectations are increasing as is the pressures to stay competitive with other boutique reality firms.
+Historically prices are set using several sources of data that is presented to agents in the form of a Comparative Market Analysis (CMA) report.  The CEO is wondering if there are other sources of data to help triangulate the prices set for newly listed homes.
+
+Pressures are mounting as home prices along with the number of building permits issued is expected to rise over the next five years.  Furthermore, customer expectations are increasing as is the pressures to stay competitive with other boutique reality firms.
 
 
 ## Data
