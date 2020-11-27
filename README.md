@@ -54,7 +54,7 @@ As prescribed by the Crisp DM methodology, model development was very iterative.
 ## Results
 
 The final model generated a predictive power (Adj R^2) of .82
-<img src="/images/Model_Final_Results.png" width="400" height="300">
+<img src="/images/Model_Final_Results.png" width="400" height="300" align="left">
 
 **The features that had the most influence/ weights include:** 
 
