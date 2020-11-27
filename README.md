@@ -55,7 +55,7 @@ As prescribed by the Crisp DM methodology, model development was very iterative.
 
 The final model generated a predictive power (Adj R^2) of .82
 
-![Movie_Genres](/images/Movie_Genre.png)
+![Preditive Power](/images/Model_Final_Results.png.png)
 
 
 The features that had the most influence/ weights include: 1.2 x Previous Year Appraisals Values : .34 x Above Square Footage: .22 x School District Rank : .15 Number of Fortune 500 Companies.  Several other features were used in making predictions.  See Power Point Presentation or Jupyter Notebook “Models” for details
