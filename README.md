@@ -54,7 +54,7 @@ As prescribed by the Crisp DM methodology, model development was very iterative.
 ## Results
 
 The final model generated a predictive power (Adj R^2) of .82
-<img src="/images/Model_Final_Results.png" width="800" height="601">
+<img src="/images/Model_Final_Results.png" width="400" height="300">
 
 **The features that had the most influence/ weights include:** 
 
@@ -69,7 +69,7 @@ The final model generated a predictive power (Adj R^2) of .82
      - Other x (See Power Point Presentation or Jupyter Notebook “Models” for details)
 
 **Example of Specific Changes Can Have On Predicted Price:** 
-<img src="/images/ChangesInAveargeHome.png" width="800" height="601">
+<img src="/images/ChangesInAveargeHome.png" width="600" height="601">
 
 
 Greatest Insight:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage”.  The reason this was so insight was the lack of reference to this variable in all my research in regards to determining a home’s sales price.  Research suggested the agents use CMA (Comps) to set pricings and while I did not have a feature related to CMA I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power, no where in my research did I see anyone recommend using “Assessor Appraisal Value” as a potential feature.  Given it was the heaviest feature in my model I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features 
