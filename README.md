@@ -72,8 +72,8 @@ The final model generated a predictive power (Adj R^2) of .82
 
   
 
-<img src="/images/ChangesInAveargeHome.png" width="600" height="601">
 
+![A_Players](/images/ChangesInAveargeHome.png)
 
 **Greatest Insight**:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage”.  The reason this was so insightful was the lack of reference to this variable in all my research in regards to determining a homes sales price.  Research suggested the agents use CMA (Comps) to set pricings and while I did not have a feature related to CMA in my model I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power.  That being said, I hypothesize that "“Assessor Appraisal Value" would be the second most heavy feature in a model that contained both "Comp Prices" and "“Assessor Appraisal Value". Given this hypothesis I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features “Location, Location, Location” as well as “Above Square Footage” as the most helpful, “Assessor Appraisal Value" is currently being overlooked.
 
