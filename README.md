@@ -95,14 +95,16 @@ Given the greater than 200% difference in wieght between the “Assessor Apprais
 This analysis leads to three recommendations helping King County Reality achieve higher seller commissions:
 
 **Physical "Controllable Features**  As real estate agents look to coach prospective sellers on features to improve to maximize sales price they should focus on “Above Square Footage”, as well as increasing “Grade” which is related to features such as custom cabinets, and other various customizations that make home less basic and more designer/ custom
+<br>
 <img src="/images/ControlableFeatures.png" width="500" height="300"></image>
-   
+<br>  
 **Location "Influenceable" Features”** While the above "controllable" features allow sellers to make short-term efforts and realize instant benefits, location based features such as the ranking of the school district in which a home resides or the number of attractions within close proximity to a home is very difficult to impact in a direct manner.  However, over the course of several years a home owner can look to invest in efforts and finances to improve school performance and or influence political decisions related to politicians who believe in bringing more attractions to the area in which a home resides.
+<br>
 <img src="/images/InfluencableFeatures.png" width="500" height="300"></image>
-
+<br>
 **Setting "Better" More Informed Prices**  Based on the 200% delta between the “Assessor Appraisal Value” feature and the next biggest feature suggests that this feature could be very instrumental in augmenting the current processes real estate agents use in setting prices.  This could be especially true in situation where CMA data is neither not available, nor as applicable as desired.
+<br>
 <img src="/images/taxAssesorValues.png" width="500" height="300"></image>
-
 
 ## Next Steps
 
