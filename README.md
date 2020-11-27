@@ -17,7 +17,7 @@ The model was developed using actual sales transactions that took place between 
 
 2:  Setting "better" or more informed sales prices.  Beyond simply analyzing the impact features can have on predicting sales prices, my research suggested adding **Assesor Apprasal Value** as a future feature to make more acurate predictions.  This is a feature that had no mentions as a vaulable predictor previous to my discovery through final model creation.
 
-Ultimately, the model can be used as both a tool by itself to ensure sellers achieve true Market Value upon sale as well as an educational tool to improve agent acumen.  This will give King County Reality the sophistication it needs to be more successful as it faces challenging predicted trends in higher home prices along with higher levels of inventory in the form of new construction.
+Ultimately, the model can be used as a stond along tool to help agents set prices that reflect true market value, as well as an educational tool to improve agent acumen.  This will give King County Reality the sophistication it needs to be more successful as it faces the challenges assocaited with rapidily rising predicted home prices along with higher levels of inventory in the form of new construction.
 
 
 
