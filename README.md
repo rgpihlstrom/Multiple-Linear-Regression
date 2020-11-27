@@ -4,7 +4,7 @@
 
 # King County Realty - Increasing Revenue From Seller Commisions
 
-**Authors**:[Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
+**Author**:[Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
 
 ## Overview
 
