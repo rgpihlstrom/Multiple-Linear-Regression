@@ -2,22 +2,22 @@
 
 ![Film_Crew](/images/KingCountyRealty.png)
 
-# King County Realty - Increasing Revenue From Seller Commisions
+# King County Realty - Increasing Revenue From Seller Commissions
 
 **Author**:[Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
 
 ## Overview
 
-This project uses Multiple Linear Regression to make predictions on potential future prices of homes sold in King County Washington and potentially surrounding areas.  By analyzing past actual prices for homes sold against the features of each respective home I developed a predictive model that explains 82% (R^2 = .82) of the variability in price.  This algorithm,“model”, can be used to predict the value each feature contributes to the final sales price of a home along with predicting potential future sales prices for homes where required data to run the model are available.  The following 6 features had the greatest weights within the model: Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Quantity of Finishd Above Square Footage.
+This project uses Multiple Linear Regression to make predictions on potential future prices of homes sold in King County Washington and potentially surrounding areas.  By analyzing past actual prices for homes sold against the features of each respective home I developed a predictive model that explains 82% (R^2 = .82) of the variability in price.  This algorithm,“model”, can be used to predict the value each feature contributes to the final sales price of a home along with predicting potential future sales prices for homes where required data to run the model are available.  The following 6 features had the greatest weights within the model: Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Quantity of Finished Above Square Footage.
 
 The model was developed using actual sales transactions that took place between May 2014 – May 2015 in the County of King in the state of Washington.  The model was developed to help a hypothetical real estate firm called King County Reality increase revenue from seller commissions by addressing two areas the CEO of King County Reality believes were gaps in current business processes:
 
-1: Help agents make more valuable recommendations to potential home sellers on the features in which to focus improving upon in order to maximize sales price.  The model allowed me to advise agents to reccomend focusing potential sellers in the following areas: **Above Square Footable, Grade of Home, Improving School District, Inviting Fortune 500 expansion/ addition**
+1: Help agents make more valuable recommendations to potential home sellers on the features in which to focus improving upon in order to maximize sales price.  The model allowed me to advise agents to recommend focusing potential sellers in the following areas: **Above Square Footage, Grade of Home, Improving School District, Inviting Fortune 500 expansion/ addition**
 
 
-2:  Setting "better" or more informed sales prices.  Beyond simply analyzing the impact features can have on predicting sales prices, my research suggested adding **Assesor Apprasal Value** as a future feature to make more acurate predictions.  This is a feature that had no mentions as a vaulable predictor previous to my discovery through final model creation.
+2:  Setting "better" or more informed sales prices.  Beyond simply analyzing the impact features can have on predicting sales prices, my research suggested adding **Assessor Appraisal Value** as a future feature to make more accurate predictions.  This is a feature that had no mentions as a valuable predictor previous to my discovery through final model creation.
 
-Ultimately, the model can be used as a stond along tool to help agents set prices that reflect true market value, as well as an educational tool to improve agent acumen.  This will give King County Reality the sophistication it needs to be more successful as it faces the challenges assocaited with rapidily rising predicted home prices along with higher levels of inventory in the form of new construction.
+Ultimately, the model can be used as a stand along tool to help agents set prices that reflect true market value, as well as an educational tool to improve agent acumen.  This will give King County Reality the sophistication it needs to be more successful as it faces the challenges associated with rapidly rising predicted home prices along with higher levels of inventory in the form of new construction.
 
 
 
@@ -37,7 +37,7 @@ Overall, pressures is mounting as home market dynamics are increasing as well as
 ## Data
 1.	Provided Data: The initial source of data entailed approximately 21k sales transactions that took place between May 2014 – May 2015 in the county of King in the state of Washington.  In addition to providing the actual sales price reached for each home, the provided data also included metadata for each home sold such as: Square Footage of Lot, Square Footage Above, Square Footage of Basement, Grade of Home, Condition of Home, Views Available, Other misc features.
 
-2.	**Scraped Data**:King County Tax Assessor Data:  This data contains several years of past appraisal information used to justify taxes levied per house.  The data from the Tax Assesor Office also include additional physical attributes as well as school district associated with each Parcel ID.  Example: https://blue.kingcounty.com/Assessor/eRealProperty/Dashboard.aspx?ParcelNbr=7338200240
+2.	**Scraped Data**:King County Tax Assessor Data:  This data contains several years of past appraisal information used to justify taxes levied per house.  The data from the Tax Assessor Office also include additional physical attributes as well as school district associated with each Parcel ID.  Example: https://blue.kingcounty.com/Assessor/eRealProperty/Dashboard.aspx?ParcelNbr=7338200240
 
 
 3.	**Scraped Data**: King County School District & Rank:  This data is used to get the ranking of the school district associated with each of the homes in the initial dataset discussed above.   Example: https://backgroundchecks.org/top-school-districts-in-washington-2018.html
@@ -75,10 +75,10 @@ The final model generated a predictive power (Adj R^2) of .82
 
 ![A_Players](/images/ChangesInAveargeHome.png)
 
-**Greatest Insight**:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage”.  The reason this was so insightful was the lack of reference to this variable in all my research in regards to determining a homes sales price.  Research suggested the agents use CMA (Comps) to set pricings and while I did not have a feature related to CMA in my model I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power.  That being said, I hypothesize that "Assessor Appraisal Value" would be the second most heavy feature in a model that contained both "Comp Prices" and "“Assessor Appraisal Value". Given this hypothesis I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features “Location, Location, Location” as well as “Above Square Footage” as the most helpful, “Assessor Appraisal Value" is currently being overlooked.
+**Greatest Insight**:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage” was very surprising and insightful.  The reason this was so insightful was the lack of reference to this variable in all my research in regards to determining a homes sales price.  Research suggested that agents primarily use CMA (Comps) to set pricings and while I did not have a feature related to CMA in my model I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power.  That being said, I hypothesize that "Assessor Appraisal Value" would be the second most heavy feature in a model that contained both "Comp Prices" and "“Assessor Appraisal Value". Given this hypothesis I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features “Location, Location, Location” as well as “Above Square Footage” as the most helpful, “Assessor Appraisal Value" is currently being overlooked. One caveat to this recommendation would be if significant improvement had been made to a home since the last onsite visit of a tax assessor.  Per the King County website, assessors make onsite assessments once every 6 years, this would make older assessments less accurate if significant improvements have been made to a home since last visit.  The same can be said if significant declines in value had occurred since the last onsite appraisal visit.
 
 ## Extra Credit
-Given the greater than 200% difference in wieght between the “Assessor Appraisal Value” feature had the next most impactful feature, “Above Square Footage”, I thought it would be interesting to see how well our model would predict "Assessor Appraisal Values”, more specifically, used the orginal model and changed the target value  predicted "Homes Sales Price to predicted “Assessor Appraisal Value”.  Interestingly my model predicted/ explained the "Assessor Appraisal Value" with greater strength than "Homes Sales Price".  Keep in mind my second model did not include the “Assessor Appraisal Value” as a feature. See below for a comparison of the same model predicting both "Home Price" and "Assesors Appraisal Value"
+Given the greater than 200% difference in weight between the “Assessor Appraisal Value” feature had the next most impactful feature, “Above Square Footage”, I thought it would be interesting to see how well our model would predict "Assessor Appraisal Values”, more specifically, used the original model and changed the target value  predicted "Homes Sales Price to predicted “Assessor Appraisal Value”.  Interestingly my model predicted/ explained the "Assessor Appraisal Value" with greater strength than "Homes Sales Price".  Keep in mind my second model did not include the “Assessor Appraisal Value” as a feature. See below for a comparison of the same model predicting both "Home Price" and "Assessors Appraisal Value"
 
 
 
@@ -87,11 +87,11 @@ Given the greater than 200% difference in wieght between the “Assessor Apprais
 ![NA](/images/Original_vs_Assesor_Value.png)
 
 
-**INSIGHT:** What this suggests is the factors that the assessors use to create appraisals are very similar to those that were provided in our initial dataset and using to build our early models.  The fact that our model explained more variability in "Assessors Appraisal Value" suggests that assessor use more tangible features when creating appraisals vs. intangilble features.  This conclusion can be drawn given the heavy presence of tangible featrues in the dataset.  More specifically, Assessors rely more heavily on the tangible features (Above Sqr Ft, Lot Size, Grade, Etc.) when developing appraisals than buyers and seller use to achieve in reaching final prices.  Hypothesized intangibility features buyer and sellers use to reach final sales price are skewed toward and or incorporate buyer preference, which is entirely subjective.
+**INSIGHT:** What this suggests is the factors that the assessors use to create appraisals are very similar to those that were provided in our initial dataset and using to build our early models.  The fact that our model explained more variability in "Assessors Appraisal Value" suggests that assessor use more tangible features when creating appraisals vs. intangible features.  This conclusion can be drawn given the heavy presence of tangible features in the dataset.  More specifically, Assessors rely more heavily on the tangible features (Above Sqr Ft, Lot Size, Grade, Etc.) when developing appraisals than buyers and seller use to achieve in reaching final prices.  Hypothesized intangibility features buyer and sellers use to reach final sales price are skewed toward and or incorporate buyer preference, which is entirely subjective.
 
 
 
-## Conclusions/ Reccomendations
+## Conclusions/ Recommendations
 This analysis leads to three recommendations helping King County Reality achieve higher seller commissions:
 
 **1. Physical "Controllable" Features:**  As real estate agents look to coach prospective sellers on features to improve to maximize sales price they should focus on “Above Square Footage”, as well as increasing “Grade” which is related to features such as custom cabinets, and other various customizations that make home less basic and more designer/ custom
