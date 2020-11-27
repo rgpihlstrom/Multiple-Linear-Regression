@@ -100,6 +100,9 @@ This analysis leads to three recommendations helping King County Reality achieve
 - **Location "Influenceable" Features”** While the above "controllable" features allow sellers to make short-term efforts and realize instant benefits, location based features such as the ranking of the school district in which a home resides or the number of attractions within close proximity to a home is very difficult to impact in a direct manner.  However, over the course of several years a home owner can look to invest in efforts and finances to improve school performance and or influence political decisions related to politicians who believe in bringing more attractions to the area in which a home resides.
 ![NA](/images/InfluencableFeatures.png)
 - **Setting "Better" More Informed Prices**  Based on the 200% delta between the “Assessor Appraisal Value” feature and the next biggest feature suggests that this feature could be very instrumental in augmenting the current processes real estate agents use in setting prices.  This could be especially true in situation where CMA data is neither not available, nor as applicable as desired.
+![NA](/images/taxAssesorValues.png)
+
+
 
 ## Next Steps
 
@@ -113,60 +116,3 @@ Further analyses could yield additional insights to help King County Reality Inc
 See the full analysis in the [Jupyter Notebooks](folder) or review our <a href="https://github.com/mattielips/movie-data-analysis/blob/master/Presentation.pdf">Presentation</a>.
 
 For additional info, contact me here: [ Russell Pihlstrom](mailto:rgpihlstrom@yahoo.com)
-
-
-## Repository Structure
-
-```
-├── CastandCrew_Analysis.ipynb
-├── Critics_Analysis.ipynb
-├── debug.log
-├── images
-    ├── Windows_Background.png
-    ├── ProfitsByPlayers.png
-    ├── Film_Set.png
-    ├── Movie_Genre.png
-    ├── Critics_Popularity.png
-    ├── Critics_ROI.png
-    ├── BoxPlot-Average$.pdf
-    ├── BoxPlot-Average$.png
-    ├── BoxPlot-#OfMovies.png
-    └── A_Players.pngnotebooks
-├── Presentation.pdf
-├── ProductionStudios_Analysis.ipynb
-├── README.md
-├── Webscraping
-    ├── CreatingMasterFinanceTable.ipynb
-    ├── CreatingMasterMovieCatalog_DF.ipynb
-    ├── Get_Known_For_MoviesData.ipynb
-    ├── Get_MetaData_FromFinanceTables.ipynb
-    ├── Preping_StarPlayer_Dfs_10_10.ipynb
-    ├── Preping_StarPlayer_Dfs.ipynb
-    └── ScrapingIMDB.ipynb
-└── zippedData
-    ├── bom.movie_gross.csv.gz
-    ├── df_Financials_SummaryAndDetail_Imdb_Dom.xlsx
-    ├── df_Generes_With_tconst.xlsx
-    ├── df_IMDB_Akas_english.xlsx
-    ├── df_IMDB_MovieCatalog.xlsx
-    ├── df_MasterFinancials_MetaData.xlsx
-    ├── df_MasterFinancials.xlsx
-    ├── df_Movie_Financials.xlsx
-    ├── df_StarActors_KnownForWithTconst.xlsx
-    ├── df_StarActors_NoDups.xlsx
-    ├── df_StarActors_With_nconst_tconst.xlsx
-    ├── df_StarActors_With_nconst.xlsx
-    ├── df_starsplayers_WithContribution.xlsx
-    ├── df_Studio_x_ref_For_import.xlsx
-    ├── imdb.name.basics.csv.gz
-    ├── imdb.title.akas.csv.gz
-    ├── imdb.title.basics.csv.gz
-    ├── imdb.title.crew.csv.gz
-    ├── imdb.title.principals.csv.gz
-    ├── imdb.title.ratings.csv.gz
-    ├── InflationAdjuster.xlsx
-    ├── rt.movie_info.tsv.gz
-    ├── rt.reviews.tsv.gz
-    ├── tmdb.movies.csv.gz
-    ├── tn.movie_budgets.csv.gz
-    └── Top_10_By_Genre_Top_Players_new.xlsx
