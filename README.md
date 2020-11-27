@@ -15,7 +15,7 @@ The model was developed using actual sales transactions that took place between 
 1: Help agents make more valuable recommendations to potential home sellers on the features in which to focus improving upon in order to maximize sales price.  The model allowed me to advise agents to reccomend focusing potential sellers in the following areas: **Above Square Footable, Grade of Home, Improving School District, Inviting Fortune 500 expansion/ addition**
 
 
-2:  Setting "better" or more informed sales prices.  Beyond simply analyzing the impact features can have on predicting sales prices, my research suggestion adding **Assesor Apprasal Value** as a future feature to make more acurate predictions.  This is a feature that had no mentions as a vaulable predictor previous to my discovery through final model creation.
+2:  Setting "better" or more informed sales prices.  Beyond simply analyzing the impact features can have on predicting sales prices, my research suggested adding **Assesor Apprasal Value** as a future feature to make more acurate predictions.  This is a feature that had no mentions as a vaulable predictor previous to my discovery through final model creation.
 
 Ultimately, the model can be used as both a tool by itself to ensure sellers achieve true Market Value upon sale as well as an educational tool to improve agent acumen.  This will give King County Reality the sophistication it needs to be more successful as it faces challenging predicted trends in higher home prices along with higher levels of inventory in the form of new construction.
 
