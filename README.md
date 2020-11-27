@@ -40,9 +40,9 @@ Overall, pressures is mounting as home market dynamics are increasing as well as
 2.	**Scraped Data**:King County Tax Assessor Data:  This data contains several years of past appraisal information used to justify taxes levied per house.  The data from the Tax Assesor Office also include additional physical attributes as well as school district associated with each Parcel ID.  Example: https://blue.kingcounty.com/Assessor/eRealProperty/Dashboard.aspx?ParcelNbr=7338200240
 
 
-3.	**Scraped Data**: King County School District & Rank:  This data is used to get the ranking of the school district associated with each of the homes in the initial dataset discussed above
+3.	**Scraped Data**: King County School District & Rank:  This data is used to get the ranking of the school district associated with each of the homes in the initial dataset discussed above.   Example: https://backgroundchecks.org/top-school-districts-in-washington-2018.html
 
-3.	**Downloaded Data**: I downloaded a variety of other data such as “Hot Zip Code” data, Attraction data, as well as creating custom bins/ groupings of data that was used in supporting model development
+3.	**Downloaded Data**: I downloaded a variety of other data such as “Hot Zip Code” data, Attraction data, as well as creating custom bins/ groupings of data that was used in supporting model development.  Example: https://www.realtor.com/research/reports/hottest-markets/
 
 ## Methods
 This project uses the Crisp DM methodology to generate and optimized the final Multiple Linear Regression model.  The model developed provides the opportunity to use a home’s features (physical and or location based) as well as other information scraped from the assessor’s office including the home appraisal tax data.  The top 6 features, attributes that had the heaviest weights (coefficients), in predicting a home’s price were : Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage.  In addition to those listed several other features were used in explaining variability in home prices.  
@@ -51,7 +51,6 @@ As prescribed by the Crisp DM methodology, model development was very iterative.
 
 **Adhering to Linear Regression Assumptions**: The assumption requirements associated with using multiple linear regression to make predictions were followed during model development and certainly added to the number of iterations required to find the optimum combination of data & features.  The assumptions include: linearity, multicollinearity, homoscedastic, and error normality.
 
-In terms of data collection, I primarily used scraping, downloading, cleaning & linking via Parcel ID or created keys (details provided above).
 ## Results
 
 The final model generated a predictive power (Adj R^2) of .82
