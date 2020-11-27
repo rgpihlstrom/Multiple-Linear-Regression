@@ -75,6 +75,8 @@ Based on the model,  using hypothetical changes in the average home features, th
 
 ![Hypothetical Impact of Changing Features to Value Changes](/images/ChangesInAveargeHome.png)
 
+<img src="/images/ChangesInAveargeHome.png" width="200" height="40">
+
 
 Greatest Insight:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage”.  The reason this was so insight was the lack of reference to this variable in all my research in regards to determining a home’s sales price.  Research suggested the agents use CMA (Comps) to set pricings and while I did not have a feature related to CMA I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power, no where in my research did I see anyone recommend using “Assessor Appraisal Value” as a potential feature.  Given it was the heaviest feature in my model I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features 
 “Location, Location, Location” as well as “Above Square Footage” are most helpful in predicting a homes price not “Assessor Appraisal Value
