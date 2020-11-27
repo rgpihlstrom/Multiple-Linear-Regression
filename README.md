@@ -35,7 +35,7 @@ Overall, pressures is mounting as home market dynamics are increasing as well as
 
 
 ## Data
-1.	Provided Data: The initial source of data entailed approximately 21k sales transactions that took place between May 2014 – May 2015 in the count of King in the state of Washington.  In addition to providing the actual sales price reached for each home, the provided data other included the basic attributes of each sold home. A subset of the attributes provided in the inital data included: Square Footage of Lot, Square Footage Above, Square Footage of Basement, Grade of Home, Condition of Home, Views Available, Other misc features.
+1.	Provided Data: The initial source of data entailed approximately 21k sales transactions that took place between May 2014 – May 2015 in the count of King in the state of Washington.  In addition to providing the actual sales price reached for each home, the provided data also included metadata for each home sold such as: Square Footage of Lot, Square Footage Above, Square Footage of Basement, Grade of Home, Condition of Home, Views Available, Other misc features.
 
 2.	**Scraped Data**: Home Tax data collected by King County Tax Assessor’s Office:  This data contains several years of past appraisal information used to justify taxes levied per house.  The data from the Tax Assesor Office also include additional physical attributes as well as school district associated with each Parcel ID
 
