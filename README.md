@@ -71,8 +71,6 @@ The final model generated a predictive power (Adj R^2) of .82
 Other - several other features were used in making predictions.  See Power Point Presentation or Jupyter Notebook “Models” for details
 
 
-![A_Players](/images/A_Players.png)
-
 Based on the model,  using hypothetical changes in the average home features, the model predicted the following results:
 
 ![A_Players](/images/Critics_ROI.png)
