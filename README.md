@@ -8,62 +8,46 @@
 
 ## Overview
 
-This project is focused on leveraging Multiple Linear Regression to make predictions on the prices of homes.  It features data captured between 2014 - 2015 of the actual sales prices of homes sold in King County Seattle between this timeframe.  It also features ancillary supporting data scraped from several sources include the King County Assessor’s office along with King County School District data.
+This project uses Multiple Linear Regression to make predictions on potential future prices of homes sold in King County Washington and potentially surrounding areas.  By analyzing past actual prices for homes sold against the features of each respective home I developed a predictive model that explains 82% (R^2 = .82) of the variability in price.  This algorithm “model” developed can then be used to predict the value each feature contributes to the final sales price along with predicting potential future sales prices for homes where required data to run the model are available.  The following 6 features had the greatest weights within the model: Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage.
+The model was developed using the data from homes sold between May 2014 – May 2015.  The model was developed to help a hypothetical real estate firm called King County Reality increase revenue from seller commissions by addressing two areas the CEO of King County Reality believes were gaps in current business processes:
+1: Help agents make more valuable recommendations to potential home sellers on the features in which to focus improving upon in order to maximize sales price
 
-The goal of the project is to accurately predict the price in which each home sold using the attributes(features) associated with each home.  The generated model was able to achieve a “Predictive Power” of 82% prices (R^2 = .82).  The following 6 features had the greatest weights within the model: Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage.
+2:  Setting "better" or more informed sales prices  
 
-The Model will be used by Real Estate agents in two capacities: 
-
-1: Making recommendations to potential home sellers on the features they should focus on improving prior to sale
-
-2:  Setting "better" or more informed prices.  
-
-Ultimately, this model will help the King County Reality Co. increase revenue from seller commissions as more informed agents and smarter prices will facilitate higher home sales prices and higher home sales prices will translate into higher seller commissions.  The model can be used as both a tool by itself to ensure sellers achieve true Market Value as well as a educational tool to improve agent acumen.  This will give King County Reality the tools it needs to be more successful as it faces predicted trends in higher home prices along with higher levels of new construction.
+Ultimately, the model can be used as both a tool by itself to ensure sellers achieve true Market Value upon sale as well as an educational tool to improve agent acumen.  This will give King County Reality the sophistication it needs to be more successful as it faces challenging predicted trends in higher home prices along with higher levels of inventory in the form of new construction.
 
 
 
 
 ## Business Problem
 
-The king County Realty company is looking to increase its revenue from seller commissions.  Housing market experts predict a spike in the prices of homes along with increases in housing inventory due to new construction.  The CEO wants to ensure the firm is prepared to appropriately meet the challenges of this new housing market and believes his firm needs to be more data driven in its approach to helping customers buy and sell homes.  The CEO has hired me to help leverage its current data sources along with finding additional data sources required to help agents in two primary areas
+The king County Realty company is looking to increase its revenue from seller commissions.  Housing market experts predict a spike in the prices of homes along with increases in housing inventory due to new construction.  The CEO wants to ensure the firm is prepared to appropriately meet the challenges of this new housing market and believes his firm needs to be more data driven in its approach to helping customers buy and sell homes.  The CEO has hired me to help leverage its current data sources along with finding new data sources to help agents in two primary areas
 
-1.	 Better understand and predict the relationship between home improvement projects and their impact on final sales price.  
+1.	 Better understand and predict the relationship between home improvement projects/ features and their impact on final sales price.  
 2.	Understand if there are other data sources that agents can use to help set smarter prices.
 
-Historically prices are set using several sources of data that is presented to agents in the form of a Comparative Market Analysis (CMA) report.  
-Pressures are mounting as home prices along with the number of building permits issued is expected to rise over the next five years.  Customer expectations are increasing as is the pressures to stay competitive.
+Historically prices are set using several sources of data that is presented to agents in the form of a Comparative Market Analysis (CMA) report.  The CEO is wondering if there are other sources of data to help triangulate the prices set for newly listed homes
+Pressures are mounting as home prices along with the number of building permits issued is expected to rise over the next five years.  Customer expectations are increasing as is the pressures to stay competitive with other boutique reality firms.
 
 
 ## Data
-1.	Houses sold between May 2014 – May 2015 in King County in the state of Washington, along with the homes basic attributes: This was the intial data provided to begin the project
+1.	Provided Data: The initial source of data entailed approximately 21k sales transactions for houses sold between May 2014 – May 2015 in King County in the state of Washington, along with the actual agreed to sales prices, other homes basic attributes were provided: Home dimensions (Square Foot Lot, Square Foot Upper, Square Foot Basement, Grade of Home, Condition of Home, Views Available, Other misc features)
 
-2.	Home Tax data collected by King County Tax Assessor’s Office:  This data contains several years of past apprasal information used to justify taxes levied per house.  Includings additional physical attributes as well as school district
+2.	Scraped Data: Home Tax data collected by King County Tax Assessor’s Office:  This data contains several years of past appraisal information used to justify taxes levied per house.  Including additional physical attributes as well as school district
 
-3.	King County School District Ranks:  This data is used to get the ranking of the school district associated with each of the homes in the initial dataset discussed above
-
-
-<ol>
-    <li>Box Office Mojo: Reporting & analysis service that tracks box office receipts. Data includes         daily, weekly, weekend, monthly, yearly, seasonal, and holiday box-office grosses & is linked         by movie title and year of release. </li>
-    <li>IMDB : Database with information related to films, including cast, crew, fan and critical             reviews & ratings.  Data is linked through unique movie keys (tconst) & person keys (nconst).     </li>
-    <li> Rotten Tomatoes:  The leading online aggregator of movie and TV show reviews. Data linked by          rotten tomatoes ID. </li>
-    <li> The Numbers:  Detailed financial analysis, from box office to Blu-ray sales. Data linked by movie name, release year, person name & birthday</li>
-</ol>
-
-
+3.	Scraped Data: King County School District & Rank:  This data is used to get the ranking of the school district associated with each of the homes in the initial dataset discussed above
+3.	Downloaded Data: I downloaded a variety of other data such as “Hot Zip Code” data, Attraction data, as well as creating custom bins/ groupings of data that was used in supporting model development
 
 ## Methods
 
 
 
-This project uses the Crisp DM methodology to generate a Multiple Linear Regression model optimized to predict the sales prices for each of the homes sold within the aforementioned timeframe.  The model developed provides the opportunity to use a homes features (physical and or location based) as well as other information collected by the assessors office including the home appraisal tax data.  The top 6 features (attributes) that had the heaviest weights (coefficients) in predicting a homes price includes : Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage. 
+This project uses the Crisp DM methodology to generate and optimized the final Multiple Linear Regression model.  The model developed provides the opportunity to use a home’s features (physical and or location based) as well as other information scraped from the assessor’s office including the home appraisal tax data.  The top 6 features, attributes that had the heaviest weights (coefficients), in predicting a home’s price were : Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage.  In addition to those listed several other features were used in explaining variability in home prices.  
 
-The methodology for model development was very interactive.  I began by doing secondary research around the basic drivers of the real estate industry, more specifically is researched what features are most attractive to buyers and sellers along with the methods used by real estate agents to set home prices.  Early on in the iterative research/ modeling process it was obvious the model was missing key elements to determine the attractiveness of the location of each home.  I rectified this gap by scraping several location riches sources of data.  Unfortunately, only a handful of these sources were present in the final model as the VIF and correlation tests resulted in many of them being excluded.  
+As prescribed by the Crisp DM methodology, model development was very iterative.  I began by doing secondary research around the basic business drivers of the real estate industry, more specifically I researched what features are most attractive to buyers and sellers along with the methods used by real estate agents to set home prices.  Early in the iterative research/ modeling process it was obvious the model was missing key elements to determine the attractiveness of the home’s location.  I addressed this gap by scraping several sources that would allow me to ascertain the richness of a home’s location (School District & Ranking, Proximity to Attractions & Corporate Headquarters of the 12 fortune 500 companies located in King County, Zip Code Hotness Scores, and other misc information).  Unfortunately, only a handful of these sources were present in the final model as the VIF and correlation tests resulted in many of them being excluded.  
+Adhering to Linear Regression Assumptions: The assumption requirements associated with using multiple linear regression to make predictions were followed during model development and certainly added to the number of iterations required to find the optimum combination of data & features.  The assumptions include: linearity, multicollinearity, homoscedastic, and error normality.
 
-The assumption requirements associated with using multiple linerar regression to make predictions were followed during model development.  The assumptions include: linearity, multicollinearity, homoscedastic, and error normality.
-
-In terms of data collection I primarily scraping, downloading, cleaning & linking via provided or created keys.
-
-
+In terms of data collection, I primarily used scraping, downloading, cleaning & linking via Parcel ID or created keys.
 ## Results
 
 The final model generated a predictive power (Adj R^2) of .82
@@ -71,44 +55,44 @@ The final model generated a predictive power (Adj R^2) of .82
 ![Movie_Genres](/images/Movie_Genre.png)
 
 
-The features that had the most influence/ wieghts include: 1.2 x Previous Year Appraisals Values : School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage.
+The features that had the most influence/ weights include: 1.2 x Previous Year Appraisals Values : .34 x Above Square Footage: .22 x School District Rank : .15 Number of Fortune 500 Companies.  Several other features were used in making predictions.  See Power Point Presentation or Jupyter Notebook “Models” for details
 
 
 ![A_Players](/images/A_Players.png)
 
-Based on the model usings hypothetical changes in the average home features in the model resulted in the following
+Based on the model,  using hypothetical changes in the average home features, the model predicted the following results:
 
 ![A_Players](/images/Critics_ROI.png)
 ![A_Players](/images/Critics_Popularity.png)
 
-## Extra Credit
 
-Given the greater than 200% greater weight of Assesor Apprasail Value feature had above the next most impactful feature, above square footable, I thought iit would be interesting to see how well our model would predict Assesor Apprasail Values, more specifically I changed the target value of the original model from a homes sales price I used it to predict the Assesor Apprasail Value.  Interesting our model predicted/ explained the Assesor Apprasail Value with greater strenght than our second model generated, which did not include the Assesor Apprasail Value as a feature.   The Assesor Apprasail Value features was not added until my third and forth models.  See below.
+Greatest Insight:  The weight “Assessor Appraisal Value” had relative to the second most heavy feature “Above Square Footage”.  The reason this was so insight was the lack of reference to this variable in all my research in regards to determining a home’s sales price.  Research suggested the agents use CMA (Comps) to set pricings and while I did not have a feature related to CMA I would hypothesize it would be stronger than “Assessor Appraisal Value” in predictive power, no where in my research did I see anyone recommend using “Assessor Appraisal Value” as a potential feature.  Given it was the heaviest feature in my model I would recommend it be added as a potential attribute to all home predictive models.  Most research suggest the more common features 
+“Location, Location, Location” as well as “Above Square Footage” are most helpful in predicting a homes price not “Assessor Appraisal Value
+## Extra Credit
+Given the greater than 200% greater weight of “Assessor Appraisal Value” feature had above the next most impactful feature, “Above Square Footage”, I thought it would be interesting to see how well our model would predict Assessor “Appraisal Values”, more specifically, I changed the target value of the original model from a homes sales price to  “Assessor Appraisal Value”.  Interesting our model predicted/ explained the Assessor Appraisal Value with greater strength than our second model was able to explain the actual sales price reached, which did not include the “Assessor Appraisal Value” as a feature.   The “Assessor Appraisal Value” features was not added until later models.  See below
 
 
 ![A_Players](/images/Critics_ROI.png)
 
 
-What this suggestes is the factors that the assesors use to create their appraisal is very simliar to those that were provided in our inital dataset.  The fact that our model explained more variablilyt in the data of the Assesors Apprasal value suggests that assesor use more tanggible features when creating appraisals and then final price buyers pay for a home has factors that are not as tangabli in nature, ie. subject preference
+What this suggests is the factors that the assessors use to create their appraisal is very similar to those that were provided in our initial dataset.  The fact that our model explained more variability in the data of the Assessors Appraisal Value suggests that assessor use more tangible features when creating appraisals, which were present in our initial dataset, than buyers and sellers use to reach final sales price.  More specifically, Assessors rely more heavily on the tangible features when developing appraisals than buyers and seller use to achieve final prices which certainly has an element of intangibility (i.e.. buyer preference, which is entirely subjective)
 
 
 
 ## Conclusions
 
-This analysis leads to three recommendations helping King County Reality acheive higher seller commisions:
+This analysis leads to three recommendations helping King County Reality achieve higher seller commissions:
 
-- **Physical "Controllable Features**  As real estate agents look to coach prospective sellers on features to improve to maximize sales price they should focus on Square Foot Main Level, as well as increasing Grade related features such as custom cabinets, and other various customozizations that make home less basic and more custom
-- **Location "Influencable" Features”** WHile the above "controllable" features allow sellers to make short-term efforts and realize instant benefits, location based features such as the ranking of the school district in which a home resides or the number of attractions within close proximity to a home is very difficult to impact in a direct manner.  However, over the course of several years a home owner can look to invest in efforts and finances to improve school performance and or influence political decisions related to politicians who believe in bringing more attractions to the area in which a home resides.
-
-- **Setting "bBtter" More Informed Prices**  Based on the 200% delta between the Assesor Apraisal feature and the next biggest feature suggests that this feature could be very intrumental in augmenting the current processes real estate agents use in setting prices.  This could be especially true in situation where CMA data is either not available or not as applicable as desired.
+- **Physical "Controllable Features**  As real estate agents look to coach prospective sellers on features to improve to maximize sales price they should focus on “Above Square Footage”, as well as increasing “Grade” which is related to features such as custom cabinets, and other various customizations that make home less basic and more designer/ custom
+- **Location "Influenceable" Features”** While the above "controllable" features allow sellers to make short-term efforts and realize instant benefits, location based features such as the ranking of the school district in which a home resides or the number of attractions within close proximity to a home is very difficult to impact in a direct manner.  However, over the course of several years a home owner can look to invest in efforts and finances to improve school performance and or influence political decisions related to politicians who believe in bringing more attractions to the area in which a home resides.
+- **Setting "Better" More Informed Prices**  Based on the 200% delta between the “Assessor Appraisal Value” feature and the next biggest feature suggests that this feature could be very instrumental in augmenting the current processes real estate agents use in setting prices.  This could be especially true in situation where CMA data is neither not available, nor as applicable as desired.
 
 ### Next Steps
 
-Further analyses could yield additional insights to help King County Reality Increase Revenue From Sales Commisions
-
-- **Augment the Current Model** Look to add prediction accuracy by studying the homes that showed the largest difference between the predicted and the actual values of a the sold home.  Additionally looking to features requiring interactivity could be explored as many factors that would seem to be impactful were elimnated due to VIF.
-- **Creating Additional Models**  The model created was optimized for the most frequent "Common/ Main stream" home prices, quantity of square footage, number of bathroom/ rooms, lot size and several other realated features were honed to predict homes that would be foound in the middle of the bell curve for normalized data.  Additional models could be created focused on homes <$200k, >$900k, Waterfront, large Lot Size, etc 
-- **Deployment** Once we have optimized our models and or generated enough model to account for the wide variety of home features that are present in the King County district look to automate and deploy via a web based interface and made available to the larger public for impromptu consumption
+Further analyses could yield additional insights to help King County Reality Increase Revenue from Sales Commissions
+- **Augment the Current Model** Look to add prediction accuracy by studying the homes that showed the largest difference between the predicted and the actual prices of homes sold.  Additionally, looking to add features requiring interactivity could be explored as many factors that would seem to be impactful were eliminated due to VIF.
+- **Creating Additional Models**  The model created was optimized for the most frequent "Common/ Main stream" home prices, quantity of square footage, number of bathroom/ rooms, lot size and several other related features were used to predict homes that would be found in the middle of the bell curve of a normalized dataset (Homes between ~$300-~$900k, Bedrooms between 1-4, Lot Size 4,000 – 12,000, Other).  Additional models could be created focused on homes <$200k, >$900k, Waterfront, large Lot Size, etc 
+- **Deployment** Once we have optimized our models and or generated enough models to account for the wide variety of home present in the King County district I would look to automate and deploy the models via a web based interface and make it available to the larger public for impromptu consumption and a potential Marketing tool to generate web traffic and brand awareness
 
 ## For More Information
 
