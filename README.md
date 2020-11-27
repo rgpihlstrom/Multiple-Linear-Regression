@@ -52,8 +52,8 @@ As prescribed by the Crisp DM methodology, model development was very iterative.
 **Adhering to Linear Regression Assumptions**: The assumption requirements associated with using multiple linear regression to make predictions were followed during model development and certainly added to the number of iterations required to find the optimum combination of data & features.  The assumptions include: linearity, multicollinearity, homoscedastic, and error normality.
 
 ## Results
-
 The final model generated a predictive power (Adj R^2) of .82
+
 <img src="/images/Model_Final_Results.png" width="400" height="300" align="left">
 
 **The features that had the most influence/ weights include:** 
