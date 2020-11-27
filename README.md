@@ -34,7 +34,7 @@ The King County Realty company is looking to increase its revenue from seller co
 
 Historically prices are set using several sources of data that is presented to agents in the form of a Comparative Market Analysis (CMA) report.  The CEO is wondering if there are other sources of data to help triangulate the prices set for newly listed homes.
 
-Overall, pressures is mounting as home market dynamics are increasing as well as customer expectations and competition faced from other boutique reality firms.
+Overall, pressure is mounting as home market dynamics, customer expectations, and competition from other boutique reality firms are increasing.
 
 
 ## Data
