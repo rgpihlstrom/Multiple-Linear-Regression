@@ -10,6 +10,9 @@
 
 This project uses Multiple Linear Regression to make predictions on potential future prices of homes sold in King County Washington and potentially surrounding areas.  By analyzing past actual prices for homes sold against the features of each respective home I developed a predictive model that explains 82% (R^2 = .82) of the variability in price.  This algorithm,“model”, can be used to predict the value each feature contributes to the final sales price of a home along with predicting potential future sales prices for homes where required data to run the model are available.  The following 6 features had the greatest weights within the model: Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Quantity of Finished Above Square Footage.
 
+![Models](/images/threemodels.png)
+
+
 The model was developed using actual sales transactions that took place between May 2014 – May 2015 in the County of King in the state of Washington.  The model was developed to help a hypothetical real estate firm called King County Reality increase revenue from seller commissions by addressing two areas the CEO of King County Reality believes were gaps in current business processes:
 
 1: Help agents make more valuable recommendations to potential home sellers on the features in which to focus improving upon in order to maximize sales price.  The model allowed me to advise agents to recommend focusing potential sellers in the following areas: **Above Square Footage, Grade of Home, Improving School District, Inviting Fortune 500 expansion/ addition**
