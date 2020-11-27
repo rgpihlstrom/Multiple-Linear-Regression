@@ -10,7 +10,7 @@
 
 This project uses Multiple Linear Regression to make predictions on potential future prices of homes sold in King County Washington and potentially surrounding areas.  By analyzing past actual prices for homes sold against the features of each respective home I developed a predictive model that explains 82% (R^2 = .82) of the variability in price.  This algorithm,“model”, can be used to predict the value each feature contributes to the final sales price of a home along with predicting potential future sales prices for homes where required data to run the model are available.  The following 6 features had the greatest weights within the model: Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Quantity of Finishd Above Square Footage.
 
-The model was developed using actual sales transactions from homes sold between May 2014 – May 2015 in the County of King in the state of Washington.  The model was developed to help a hypothetical real estate firm called King County Reality increase revenue from seller commissions by addressing two areas the CEO of King County Reality believes were gaps in current business processes:
+The model was developed using actual sales transactions that took place between May 2014 – May 2015 in the County of King in the state of Washington.  The model was developed to help a hypothetical real estate firm called King County Reality increase revenue from seller commissions by addressing two areas the CEO of King County Reality believes were gaps in current business processes:
 
 1: Help agents make more valuable recommendations to potential home sellers on the features in which to focus improving upon in order to maximize sales price
 
@@ -35,17 +35,15 @@ Overall, pressures is mounting as home market dynamics are increasing as well as
 
 
 ## Data
-1.	Provided Data: The initial source of data entailed approximately 21k sales transactions for houses sold between May 2014 – May 2015 in King County in the state of Washington, along with the actual agreed to sales prices, other homes basic attributes were provided: Home dimensions (Square Foot Lot, Square Foot Upper, Square Foot Basement, Grade of Home, Condition of Home, Views Available, Other misc features)
+1.	Provided Data: The initial source of data entailed approximately 21k sales transactions that took place between May 2014 – May 2015 in the count of King in the state of Washington.  In addition to providing the actual sales price reached for each home, the provided data other included the basic attributes of each sold home. A subset of the attributes provided in the inital data included: Square Footage of Lot, Square Footage Above, Square Footage of Basement, Grade of Home, Condition of Home, Views Available, Other misc features.
 
-2.	Scraped Data: Home Tax data collected by King County Tax Assessor’s Office:  This data contains several years of past appraisal information used to justify taxes levied per house.  Including additional physical attributes as well as school district
+2.	Scraped Data: Home Tax data collected by King County Tax Assessor’s Office:  This data contains several years of past appraisal information used to justify taxes levied per house.  The data from the Tax Assesor Office also include additional physical attributes as well as school district associated with each Parcel ID
 
 3.	Scraped Data: King County School District & Rank:  This data is used to get the ranking of the school district associated with each of the homes in the initial dataset discussed above
+
 3.	Downloaded Data: I downloaded a variety of other data such as “Hot Zip Code” data, Attraction data, as well as creating custom bins/ groupings of data that was used in supporting model development
 
 ## Methods
-
-
-
 This project uses the Crisp DM methodology to generate and optimized the final Multiple Linear Regression model.  The model developed provides the opportunity to use a home’s features (physical and or location based) as well as other information scraped from the assessor’s office including the home appraisal tax data.  The top 6 features, attributes that had the heaviest weights (coefficients), in predicting a home’s price were : Previous Year Appraisals Values: School District Rank : Number of Fortune 500 Companies within 10 miles: Grade Of Home: and Above Square Footage.  In addition to those listed several other features were used in explaining variability in home prices.  
 
 As prescribed by the Crisp DM methodology, model development was very iterative.  I began by doing secondary research around the basic business drivers of the real estate industry, more specifically I researched what features are most attractive to buyers and sellers along with the methods used by real estate agents to set home prices.  Early in the iterative research/ modeling process it was obvious the model was missing key elements to determine the attractiveness of the home’s location.  I addressed this gap by scraping several sources that would allow me to ascertain the richness of a home’s location (School District & Ranking, Proximity to Attractions & Corporate Headquarters of the 12 fortune 500 companies located in King County, Zip Code Hotness Scores, and other misc information).  Unfortunately, only a handful of these sources were present in the final model as the VIF and correlation tests resulted in many of them being excluded.  
